@@ -1,0 +1,5 @@
+*.log
+wireTap*.txt
+.svn
+/target
+/tmp

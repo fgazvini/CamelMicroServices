@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <!-- This page is copyright Elated Communications Ltd. (www.elated.com) -->
+
+    <title>OpenScape Voice, Xpressions and UC Provisioning</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <style type="text/css">
+      body { font-size: 80%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; color: #92D050; background-color: #292929; }
+      a:link { color: #f0f0f0; }
+      a:visited { color: #f0f0f0; }
+      ul#tabs { color: #92D050; background-color: #292929; list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+      ul#tabs li { display: inline; }
+      <!-- ul#tabs li a { color: #42450a; background-color: #dedbdd; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; } -->
+      ul#tabs li a { color: #92D050; background-color: #555555; border: 1px solid #000000; border-bottom: none; padding: 0.3em; text-decoration: none; }
+      <!-- ul#tabs li a:hover { background-color: #f1f0ee; } -->
+      ul#tabs li a:hover { color: #92D050; background-color: #444444; font-weight: bold;}
+      <!-- ul#tabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }-->
+      ul#tabs li a.selected { color: #92D050; background-color: #333333; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }
+      <!-- div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee; } -->
+      div.tabContent { border: 1px solid #000000; padding: 0.5em; color: #f0f0f0; background-color: #333333; }
+      div.tabContent.hide { display: none; }
+      button      { color : #92D050; background-color : #555555; 
+       		  <!-- margin: 20px; -->
+       		  <!-- box-shadow: inset 0px 11px 8px -10px #888, inset 0px -11px 8px -10px #888; -->
+       		  <!-- box-shadow:inset 2px 2px 5px #888;
+       		  -webkit-box-shadow:inset 2px 2px 5px #888, ;
+       		  -moz-box-shadow:inset 2px 2px 5px #888; -->
+       		   <!-- -webkit-box-shadow:0 0 5px #007eff;
+  			-moz-box-shadow:0 0 5px #007eff;
+ 			box-shadow:0 0 5px #007eff; -->
+ 			<!-- -webkit-box-shadow:0 0 3px #000000;
+			  -moz-box-shadow:0 0 3px #000000;
+			  box-shadow:0 0 3px #000000;
+			    box-shadow:0 0 5px #007eff; --> 		  
+       		  margin: 2px;
+       		  margin-left: 2px;
+       		  -webkit-margin-left: 2px;
+       		  -webkit-margin: 2px;
+       		  outline: none;
+      		  -moz-border-radius:6px;
+   			  -webkit-border-radius:6px;
+  			  border-radius:6px; 
+  			  border:3px solid #444444;
+  			  <!-- border: none; -->
+  			  padding-left:10px
+  			  padding-right:10px
+  			  <!-- 
+  			  -webkit-padding-left:10px
+  			  -moz-padding-left:10px
+  			  -->
+
+  -webkit-box-shadow:inset 0 0 3px #000000;
+  -moz-box-shadow:inset 0 0 3px #000000;
+  box-shadow:inset 0 0 3px #000000;
+  			  } 
+  			  
+  input      { color : #92D050; background-color : #555555; 
+       		  <!-- margin: 20px; -->
+       		  <!-- box-shadow: inset 0px 11px 8px -10px #888, inset 0px -11px 8px -10px #888; -->
+       		  <!-- box-shadow:inset 2px 2px 5px #888;
+       		  -webkit-box-shadow:inset 2px 2px 5px #888, ;
+       		  -moz-box-shadow:inset 2px 2px 5px #888; -->
+       		   <!-- -webkit-box-shadow:0 0 5px #007eff;
+  			-moz-box-shadow:0 0 5px #007eff;
+ 			box-shadow:0 0 5px #007eff; -->
+ 			<!-- -webkit-box-shadow:0 0 3px #000000;
+			  -moz-box-shadow:0 0 3px #000000;
+			  box-shadow:0 0 3px #000000;
+			    box-shadow:0 0 5px #007eff; --> 		  
+       		  margin: 2px;
+       		  margin-left: 2px;
+       		  -webkit-margin-left: 2px;
+       		  -webkit-margin: 2px;
+       		  outline: none;
+      		  -moz-border-radius:6px;
+   			  -webkit-border-radius:6px;
+  			  border-radius:6px; 
+  			  border:3px solid #444444;
+  			  <!-- border: none; -->
+  			  padding-left:10px
+  			  padding-right:10px
+  			  <!-- 
+  			  -webkit-padding-left:10px
+  			  -moz-padding-left:10px
+  			  -->
+
+  -webkit-box-shadow:inset 0 0 3px #000000;
+  -moz-box-shadow:inset 0 0 3px #000000;
+  box-shadow:inset 0 0 3px #000000;
+  			  }
+
+  select      { color : #92D050; background-color : #555555; 
+       		  <!-- margin: 20px; -->
+       		  <!-- box-shadow: inset 0px 11px 8px -10px #888, inset 0px -11px 8px -10px #888; -->
+       		  <!-- box-shadow:inset 2px 2px 5px #888;
+       		  -webkit-box-shadow:inset 2px 2px 5px #888, ;
+       		  -moz-box-shadow:inset 2px 2px 5px #888; -->
+       		   <!-- -webkit-box-shadow:0 0 5px #007eff;
+  			-moz-box-shadow:0 0 5px #007eff;
+ 			box-shadow:0 0 5px #007eff; -->
+ 			<!-- -webkit-box-shadow:0 0 3px #000000;
+			  -moz-box-shadow:0 0 3px #000000;
+			  box-shadow:0 0 3px #000000;
+			    box-shadow:0 0 5px #007eff; --> 		  
+       		  margin: 2px;
+       		  margin-left: 2px;
+       		  -webkit-margin-left: 2px;
+       		  -webkit-margin: 2px;
+       		  outline: none;
+      		  -moz-border-radius:6px;
+   			  -webkit-border-radius:6px;
+  			  border-radius:6px; 
+  			  border:3px solid #444444;
+  			  <!-- border: none; -->
+  			  padding-left:10px
+  			  padding-right:10px
+  			  <!-- 
+  			  -webkit-padding-left:10px
+  			  -moz-padding-left:10px
+  			  -->
+
+  -webkit-box-shadow:inset 0 0 3px #000000;
+  -moz-box-shadow:inset 0 0 3px #000000;
+  box-shadow:inset 0 0 3px #000000;
+  			  }     
+      
+    </style>
+    
+    <!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #f0f0f0;
+}
+</style>
+
+    <script type="text/javascript">
+    //<![CDATA[
+
+    var tabLinks = new Array();
+    var contentDivs = new Array();
+
+    function init() {
+
+      // Grab the tab links and content divs from the page
+      var tabListItems = document.getElementById('tabs').childNodes;
+      for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }
+
+      // Assign onclick events to the tab links, and
+      // highlight the first tab
+      var i = 0;
+
+      for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'selected';
+        i++;
+      }
+
+      // Hide all content divs except the first
+      var i = 0;
+
+      for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+        i++;
+      }
+    }
+
+    function showTab() {
+      var selectedId = getHash( this.getAttribute('href') );
+
+      // Highlight the selected tab, and dim all others.
+      // Also show the selected content div, and hide all others.
+      for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+          tabLinks[id].className = 'selected';
+          contentDivs[id].className = 'tabContent';
+        } else {
+          tabLinks[id].className = '';
+          contentDivs[id].className = 'tabContent hide';
+        }
+      }
+
+      // Stop the browser following the link
+      return false;
+    }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+
+    //]]>
+    	function deleteRow(tableID) {
+  			try {		
+ 
+  			var table = document.getElementById(tableID);
+  			var rowCount = table.rows.length;
+
+  
+  			for(var i=0; i<rowCount; i++) {
+  				var row = table.rows[i];
+  				var chkbox = row.cells[0].childNodes[0];
+  				if(null != chkbox && true == chkbox.checked) {
+  					table.deleteRow(i);
+  					rowCount--;
+  					i--;
+            
+  				}
+  
+  
+  			}
+  			}catch(e) {
+  				alert(e);
+  			}
+      }
+      
+      function addRow(tableID, customerName) {
+                         
+  			var table = document.getElementById(tableID);
+  
+  			var rowCount = table.rows.length;
+  			var row = table.insertRow(rowCount);
+  
+
+  			var cell1 = row.insertCell(0);
+  			var element1 = document.createElement("input");
+  			element1.type = "checkbox";
+  			element1.name="chkbox[]";
+  			cell1.appendChild(element1);
+  
+  			var cell2 = row.insertCell(1);
+  			cell2.innerHTML = customerName;
+  
+  			var cell3 = row.insertCell(2);
+        cell3.innerHTML = "0";
+        
+        var cell4 = row.insertCell(3);
+        cell4.innerHTML = "0";
+        
+        var cell5 = row.insertCell(4);
+        var element5 = document.createElement("button");
+        var text5=document.createTextNode("edit");
+        element5.appendChild(text5);
+
+        cell5.appendChild(element5);
+		}
+    
+    </script>
+    <script type="text/javascript" src="javascript/livevalidation_standalone.compressed.js"></script>
+  </head>
+  <body onload="init()">
+    <h1>OpenScape Voice, Xpressions and UC Provisioning</h1>
+    <h3>Proof of Concept based on Apache Camel</h3>
+    Get <a href="./CloudWebPortal/doc/README.txt">Readme.txt</a> and <a href="./CloudWebPortal/doc/ReleaseNotes.txt">ReleaseNotes.txt</a>
+    
+    
+    <!-- old: direct connection to ProvisioningEngine --> 
+    <!-- <form name="order" method="POST" action="http://${headers.webPortalIP}/order.txt"> -->
+    <!--  	note: it was written "webPortalIP", but is was meant "ProvisioningEngineIP" here: /order.txt is a URL of the PE.  
+    
+    -->
+
+    <!-- new: send messages to WebPortal, which in turn will relay it to the WebPortal -->
+    <form name="order" method="POST" action="http://${headers.webPortalIP}/CloudWebPortal">
+    <!-- <form name="order" method="POST" action="http://${headers.webPortalIP}/ProvisioningEngine"> -->
+
+    <input type="checkbox" name="testMode" value="testMode">Test Mode: create configuration files, but do not execute them<br>
+    <input type="checkbox" name="offlineMode" value="offlineMode">Offline Mode (experimental): like Test Mode, but without online check of input parameters<br> 
+	<a href="http://${headers.webPortalIP}/CloudWebPortalCDC">Template Mode (Click here to change to CDC Mode (experimental))</a>
+	
+	<p>
+	  <table>
+        <!-- <input type="hidden" name="OSVIP" onblur="document.order.OSVIP.value = this.value;"/> -->
+        <!-- <input type="hidden" id="customerName" name="customerName" onblur="document.order.customerName1.value = this.value;"/> -->
+        <tr><td><button type="submit" value="List Customers" id="action" name="action">List Customers</button></td>
+        <td><button type="submit" value="Show Sites" id="action" name="action">Show Sites</button></td>
+        <td><button type="submit" value="List Office Codes" id="action" name="action">List Office Codes</td>
+		<td><button type="submit" value="List Users" id="action" name="action">List Users</td></tr>
+      </table>
+    </p>
+    <ul id="tabs">
+    
+     <li><a href="#targetsystems">Target Systems</a></li>
+      <li><a href="#customers">Customers</a></li>
+      <li><a href="#sites">Sites</a></li>
+      <li><a href="#users">Users</a></li>
+    </ul>
+
+    <div class="tabContent" id="targetsystems">
+      <p>Please specify the IP Addresses or host names of the target systems.</p>
+      
+      <!-- <input type="checkbox" name="testMode" value="testMode">Test Mode: simulate configuration and show configuration files<br> -->
+      
+        <table>
+
+          <tr><td>OpenScape Voice Admin IP         </td><td><input type="text" name="OSVIP" onblur="document.showCustomers.OSVIP.value = this.value;"/></td><td>default: ${headers.OSVIP} (${headers.OSVDescription})</td>
+              <td><button type="submit" value="PrepareSystem" name="action">Prepare System </button></td></tr>
+          <tr><td>Xpressions Admin IP        </td><td><input type="text" name="XPRIP" /></td><td>default: ${headers.XPRIP} (${headers.XPRDescription})</td></tr>
+          <tr><td>UC Admin IP         </td><td><input type="text" name="UCIP" /></td><td>default: ${headers.UCIP} (${headers.UCDescription})</td></tr>          
+          
+    
+        </table>
+
+  </div>
+
+    <div class="tabContent" id="customers">
+
+      <p>Please specify the customer name</p>
+      
+        <table>
+       
+          <tr>
+          <td>Customer Name*</td><td><!-- <input type="text" name="customerName">       -->
+	    <!-- onblur needed to transfer the value to the show commands  -->
+	          <input type="text" id="customerName1" name="customerName" onblur="document.order.customerName2.value = this.value;document.order.customerName3.value = this.value;"/>
+            
+<!--
+		<script type="text/javascript">
+			//
+			// Input Validation (should work in principle, but is not used because of issue ER_2013-09-12-3:)
+			//
+	            	var customerName1 = new LiveValidation('customerName1', { validMessage: 'OK', wait: 500 });
+	            	customerName1.add(Validate.Presence, {failureMessage: "Input Required!"}); 
+
+             		// static: 
+             		//customerName1.add(Validate.Format, {pattern: /^.{1,16}$/i, failureMessage: "Name too long!" } ); 
+	         	// replaced by:
+			// read from InputValidation.cfg.
+			customerName1.add(Validate.Format, {pattern: /${headers.customerNameWebRegex1}/i, failureMessage: "Name too long!" } );   
+	             
+	         	// static: 
+	         	//customerName1.add(Validate.Format, {pattern: /^[A-Z,a-z,0-9]{1,100}$/i, failureMessage: "Invalid Character! Allowed: [A-Z,a-z,0-9], e.g. \"356\" or \"CSL356\"" } ); 
+	         	// replaced by:
+	         	// read from InputValidation.cfg.
+	         	customerName1.add(Validate.Format, {pattern: /${headers.customerNameWebRegex2}/i, failureMessage: "Invalid Character! Allowed: [A-Z,a-z,0-9], e.g. \"356\" or \"CSL356\"" } );
+	          </script>
+-->
+          </td> <td><button type="submit" value="Add Customer" name="action">Add Customer</td><td align="right"><button type="submit" value="Delete Customer" name="action">Delete Customer</td>
+          
+
+            </tr>
+ <!--
+            <tr>
+          <td>External Number Display</td><td><input type="text" id="BgDisplayNumber" name="BgDisplayNumber"/>
+          </td><td>
+          
+
+            </td></tr>
+  -->
+          <tr><td></td><td></td><td>~30 sec</td><td>~4-5 minutes</td></tr>
+          <!--
+          <tr><td><button type="submit" value="Delete Customer" name="action">Delete Customer</td><td>~4-5 minutes</td></tr>
+          -->
+    
+        </table>
+
+  </div>
+
+ 
+
+<!--
+<form name="customerInput">
+<table>
+  <tr><td><input type="button" value="Add" onclick="addRow('customerTable', document.customerInput.customerName.value)"><input type="text" name="customerName"> Customer Name</td></tr>
+  <tr><td><input type="button" value="Delete Selected" onclick="deleteRow('customerTable')"> </td></tr>
+</table>
+</form>
+-->
+       
+
+
+<!-- Table goes in the document BODY -->
+
+<!-- PHP seems to be ignored, if not taken care of in xampp -->
+<!--
+<_?php
+print "Sch&ouml;n, dass du da bist!";
+?_>
+
+Hello, today is <_?php echo date('l, F jS, Y'); ?_>.
+
+<table class="gridtable" id="customerTable">
+<tr>
+	<th></th><th>Customer Name</th><th>Number of Sites</th><th>Number of Users</th><th>Action</th>
+</tr>
+<tr>
+	<TD><INPUT type="checkbox" name="chk"/></TD> <td>Example Customer 1</td><td>0</td><td>0</td><td>edit delete</td>
+</tr>
+</table>
+
+
+-->
+    <div class="tabContent" id="sites">
+        <p>Please specify site specific data. Target: OpenScape Voice.</p>
+              
+        <table>
+          <tr><td>Customer Name*             </td><td> <input type="text" id="customerName2" name="customerName2" onblur="document.order.customerName.value = this.value;document.order.customerName1.value = this.value;document.order.customerName3.value = this.value;"/>          
+          <tr><td>Site Name*             </td><td><input type="text" name="SiteName" onblur="document.order.SiteName2.value = this.value;">  </td>          <td><button type="submit" value="Show Sites" name="action">Show Site Data</td></tr>
+          <tr><td>Site Code**             </td><td><input type="text" name="SC">       </td></tr>
+        <!--  <tr><td>Site ID**</td><td><input type="text" name="SiteID">        </td><td>01 to 99</td></tr> -->
+#if ( ${headers.showLocalGW} == true )          
+          <tr><td>Proxy/Gateway IP Address</td><td><input type="text" name="GatewayIP">        </td><td>(optional) as seen from OSV; e.g. 10.1.1.1</td></tr>
+#end
+          <tr><td align="right"> Country Code**          </td><td>Area Code**                               </td><td>Local Office Code**         </td><td>Extension Length**</td><td>Main Extension** (used as display number for non-public extensions)</td></tr>
+          <tr><td align="right">  
+
+          <select name="CC">
+              <option>1</option>
+              <option>44</option>
+              <option>49</option>
+          </select>
+                               </td><td><input type="text" name="AC">          </td><td><input type="text" name="LOC"></td><td><select type="number" name="XLen">
+                                                                                                                                <option>1</option>
+                                                                                                                                <option>2</option>
+                                                                                                                                <option>3</option>
+                                                                                                                                <option>4</option>
+                                                                                                                                <option>5</option>
+                                                                                                                                <option>6</option>
+                                                                                                                                <option>7</option>
+                                                                                                                                </select></td><td><input type="text" name="EndpointDefaultHomeDnXtension"></td></tr>  
+        
+          <tr><!-- not implemented yet: <input type="submit" value="save" name="action"> -->       
+             <td>
+                <button type="submit" value="Add Site" name="action">Add Site
+             </td>
+             <td>
+                <button type="submit" value="Delete Site" name="action">Delete Site
+             </td>
+          </tr>
+          <tr>
+             <td>
+                ~10 sec</td>
+             <td>
+                ~1-2 minutes
+             </td>
+           </tr>        
+        </table>
+
+    </div>
+
+    <div class="tabContent" id="users">
+        <p>Please specify user data. Target systems: OpenScape Voice, Xpressions and UC.</p>
+        
+        <table>
+          
+          <tr><td>Customer Name*             </td><td> <input type="text" id="customerName3" name="customerName3" onblur="document.order.customerName.value = this.value;document.order.customerName1.value = this.value;document.order.customerName2.value = this.value;"/>          
+          <tr><td>Site Name*             </td><td><input type="text" id="SiteName2" name="SiteName2" onblur="document.order.SiteName.value = this.value;">  </td>          <td><button type="submit" value="Show Site Data" name="action">Show Site Data</td></tr>
+
+          <tr><td>Extension*</td><td><input type="text" name="X"></td></tr>  
+        
+          <tr><td>Given Name**         </td><td><input type="text" id="givenName" name="givenName"></td></tr>
+          <tr><td>Family Name**         </td><td><input type="text" id="familyName" name="familyName"></td></tr>
+          <tr><td>Email Address**         </td><td><input type="text" id="assignedEmail" name="assignedEmail"></td></tr>
+          <tr><td>IM Address**         </td><td><input type="text" id="imAddress" name="imAddress"></td></tr>
+          <tr><td> <!-- not implemented yet: <input type="submit" value="save" name="action"> --> 
+          <button type="submit" value="Add User" name="action">Add User</td><td>~20 sec</td></tr>        
+          <tr><td> <!-- not implemented yet: <input type="submit" value="save" name="action"> --> 
+          <button type="submit" value="Delete User" name="action">Delete User</td><td>~20 sec</td></tr>
+          </table>
+      
+
+ 
+    </div>
+     * = input required <br>
+     ** = input required for Add function only
+     </form>
+     
+     <!-- old: sent directly to the ProvisioningEngine (which, up to know has shared the same IP address ${headers.webPortalIP}
+               and from there, to the OSV:8767
+     <form name="showCustomers" method="POST" action="http://${headers.webPortalIP}/show">
+     Old:
+      <table>
+        <input type="hidden" name="OSVIP" onblur="document.order.OSVIP.value = this.value;"/>
+        <input type="text" id="customerName" name="customerName" onblur="document.order.customerName1.value = this.value;"/>
+        <tr><td><input type="submit" value="List Customers" id="action" name="action"></td></tr>
+        <tr><td><input type="submit" value="List Office Codes" id="action" name="action"></td></tr>
+        <tr><td><input type="submit" value="List Numbering Plans" id="action" name="action"></td></tr>
+        
+        <tr><td><input type="submit" value="List Users" id="action" name="action"></td></tr>
+      </table>
+     </form>
+     -->
+
+        
+     <!--
+     <form method="POST" action="http://${headers.webPortalIP}:8767/show.xml">
+      <table>
+        <tr> </tr>
+        <tr><td><input type="submit" value="List Customers Local Test" id="action" name="action"></td><td>Under Construction</td></tr>
+        
+      </table>
+     </form>
+     -->     
+  </body>
+</html>

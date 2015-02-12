@@ -1,0 +1,10 @@
+## just trying something:
+## initialize for testing:
+#set ( ${headers.systemType} = "mySystemType" )
+#set ( $templateName = "template" )
+#if ( ${headers.systemType} && ${headers.systemType} != "" )
+  # set ( $templateName = $templateName + "_systemType=" + ${headers.systemType} )
+#else
+  ${headers.systemType} is mandatory!
+#end
+$templateName
