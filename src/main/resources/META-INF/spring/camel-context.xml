@@ -9,7 +9,33 @@
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
   <camelContext xmlns="http://camel.apache.org/schema/spring">
-    <route>
+  	<propertyPlaceholder location="sftp_testdata.properties" id="properties"/>
+    <endpoint uri="jetty:http://0.0.0.0:{{sftp.inputport}}/routeselector?continuationTimeout=3600000" id="routeselector"/>
+    <route id="routeselector">
+    	<description>Assuming that sftp.inputport=2004, try in a browser the URL: http://localhost:2004/routeselector?routelist=direct:noop,direct:ping&amp;parallelProcessing=true</description>
+    	<from ref="routeselector"/>    
+        <choice>
+        	<when>
+        		<simple>${header.parallelProcessing} == true</simple>
+        		<recipientList parallelProcessing="true">
+		            <simple>${header.routelist}</simple>
+		        </recipientList>
+        	</when>
+        	<otherwise>
+        		<recipientList parallelProcessing="false">
+		            <simple>${header.routelist}</simple>
+		        </recipientList>
+        	</otherwise>
+        </choice>
+        <choice>
+        	<when><simple>${header.trace} == "true"</simple>
+		        <setBody>
+		        	<simple>[[headers]]\n${headers}\n\n[[body]]\n${body}</simple>
+		        </setBody>
+        	</when>
+        </choice>
+    </route>
+    <route id="splitMessagesFromLondon">
         <description>here is a sample which processes the input files
          (leaving them in place - see the 'noop' flag)
          then performs content based routing on the message using XPath</description>
@@ -28,19 +54,89 @@
     </route>
     <route id="enrichHeaderFromTemplate">
         <from uri="file:src/data/enrichHeaderFromTemplateTest?noop=true"/>
-        <recipientList>
+        <recipientList parallelProcessing="true">
             <simple>direct:setHeaderFromTemplate,direct:noop</simple>
         </recipientList>
     </route>
-    <route>
+    <route id="noop">
         <from uri="direct:noop"/>
         <log message="noop"/>
+        <setHeader headerName="noop">
+        	<simple>noop</simple>
+        </setHeader>
+    </route>
+    <route id="ping">
+        <from uri="direct:ping"/>
+        <log message="ping"/>
+        <setHeader headerName="ping">
+        	<simple>ping</simple>
+        </setHeader>
+        <setBody>
+        	<simple>pong</simple>
+        </setBody>     
     </route>
     <route id="setHeaderFromTemplate">
         <from uri="direct:setHeaderFromTemplate"/>
-        <log message="setHeaderFromTemplate"/>
+        <stop />
+            <setHeader headerName="templateName">
+                <description>&lt;choice&gt;
+            &lt;when&gt;
+                &lt;simple&gt;${header.templateName} == ""&lt;/simple&gt;</description>
+                <simple>_template_name_builder.vm</simple>
+            </setHeader>
+            <recipientList>
+                <description>&lt;/when&gt;
+        &lt;/choice&gt;</description>
+                <simple>velocity:./templates/${header.templateName}?loaderCache=false&amp;contentCache=false</simple>
+            </recipientList>
+            <to uri="verifyTemplate"/>
+            <log message="setHeaderFromTemplate"/>
+            <setHeader headerName="templateName">
+                <simple>${body}</simple>
+            </setHeader>
+            <to uri="file:target/messages/setHeaderFromTemplate/"/>
+        
+    </route>
+    <route id="applyTemplate">
+        <description>Requires: templateName:string
+Optional: verifyTemplate:string[&quot;true&quot;,&quot;false&quot;], default: &quot;false&quot;
+        </description>
+        <from uri="direct:applyTemplate"/>
+        <log message="applyTemplate"/> 
+            <recipientList>
+                <simple>velocity:./templates/${header.templateName}?loaderCache=false&amp;contentCache=false</simple>
+            </recipientList>
+            <choice>
+            	<when><simple>${header.clearContentCache} == "true"</simple>
+     				<to uri="clearContentCache"/>
+            	</when>
+            </choice> 
+            <to uri="velocity:./templates/template_SoapMassProv_Answer.vm?contentCache=true" />
+            <choice>
+            	<when><simple>${header.verifyTemplate} == "true"</simple>
+     				<to uri="verifyTemplate"/>
+            	</when>
+            </choice>                 
+    </route>
+    <route id="controlbus">
+    	<from uri="direct:controlbus" />
+    	<log message="controlbus"/>
+    	<choice>
+    		<when><simple>${header.action} != "status"</simple>
+		    	<recipientList>
+		            <simple>controlbus:route?routeId=${header.routeId}&amp;action=${header.action}</simple>
+		        </recipientList>    		
+    		</when>
+    	</choice>
+    	<recipientList>
+            <simple>controlbus:route?routeId=${header.routeId}&amp;action=status</simple>
+        </recipientList>
+    	<!--  <to uri="controlbus:route?routeId=applyTemplate&amp;action=status" /> -->
     </route>
 </camelContext>
-  
 
+<bean id="verifyTemplate" class="com.mycompany.camel.spring2.VerifyData"/>
+<bean id="clearContentCache" class="com.mycompany.camel.spring2.ClearContentCache"/>
+<!--  <bean id="myExeptionHandler" class="com.mycompany.camel.spring2.MyExceptionHandler"/>
+-->
 </beans>

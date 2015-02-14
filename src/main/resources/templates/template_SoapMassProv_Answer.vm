@@ -1,0 +1,3306 @@
+*********  Success:235   Warnings:0    Errors:0     Syntax Errors:0      *********
+unresolvedParamsCount=0
+
+
+	          RTP Command Line Interface
+
+	Copyright (c) Fujitsu Technology Solutions 2009
+	              All Rights Reserved
+
+         Copyright (C) 2006-2012 Siemens Enterprise Networks 
+                       All Rights Reserved. 
+
+NOTE:   You may use this software only in accordance with the terms of your
+license agreement, located on any of the installation CDs for this product.
+
+
+
+(This process is running as "RtpAdmCli01")
+
+
+Management session established for user "sysad" on "osv1"
+
+
+Activating expert mode.
+
+Use the command 'help' to see all available commands or
+'help "REGULAR EXPR."' to see all commands that match the given
+regular expression.
+Use 'help command' to get help for the specific command.
+Use 'exit' to exit.
+Use 'menu' for menu mode.
+Use 'file' "FILENAME" to execute commands.
+Use 'batch' "FILENAME" to execute commands without manual interaction.
+Use 'showCbOutput' for callback output.
+Use 'waitForCb' for continuous callback output.
+Use 'changePw' for password change.
+Use 'openlog' "FILENAME" to write output to a log file.
+Use 'closelog' to close a previously opened logfile.
+Use 'sleep' "millisecs" to pause.
+CLI>
+Processing data in version format : 11.00.01
+
+Processing File in NEW MP2 format ... 
+Executing MP2 COMMAND:
+FILE VERSION:11.00.01:MP2	
+NPCREATE	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,NUMBERPLANID="0014"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+NPCREATE	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,NUMBERPLANID="0014"	;;
+CBG	 ,BGNAME="HerokuCustomer"	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DISPLAYNUMBER="0014"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+CBG	 ,BGNAME="HerokuCustomer"	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DISPLAYNUMBER="0014"	;;
+UBMDR	 ,BGNAME="HerokuCustomer"	 ,MDRINDICATOR="On"	 ,MDRCUSTID="0014"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+UBMDR	 ,BGNAME="HerokuCustomer"	 ,MDRINDICATOR="On"	 ,MDRCUSTID="0014"	;;
+UBCNT	 ,BGNAME="HerokuCustomer"	 ,MEDIASVRRETRYCOUNT=3	 ,MEDIASVRTIMEOUTINTERVAL=15	 ,INPUTRETRYCOUNT=3	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+UBCNT	 ,BGNAME="HerokuCustomer"	 ,MEDIASVRRETRYCOUNT=3	 ,MEDIASVRTIMEOUTINTERVAL=15	 ,INPUTRETRYCOUNT=3	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgSILM	 ,MONITORTAGLIMIT=50	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgSILM	 ,MONITORTAGLIMIT=50	;;
+BGPARAMSMODIFY	 ,BGNAME="HerokuCustomer"	 ,BGCOMMONNUMBERPLANNAME="CNP_HerokuCustomer_0014"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+BGPARAMSMODIFY	 ,BGNAME="HerokuCustomer"	 ,BGCOMMONNUMBERPLANNAME="CNP_HerokuCustomer_0014"	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="+"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=1	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="+"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=1	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="1"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="1"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="2"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="2"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="3"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="3"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="4"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="4"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="5"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="5"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="6"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="6"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="7"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="7"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="8"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="8"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="9"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="9"	 ,DNMINLEN=1	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*46"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*46"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-International"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="1234567890"	 ,DNMINLEN=10	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=10	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ConferenceFctNr"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="1234567890"	 ,DNMINLEN=10	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=10	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ConferenceFctNr"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*10"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ASRS"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*10"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ASRS"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#10"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DSRS"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#10"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DSRS"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**10"	 ,DNMINLEN=4	 ,DNMAXLEN=4	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=4	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ESRS"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**10"	 ,DNMINLEN=4	 ,DNMAXLEN=4	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=4	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ESRS"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*11"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SLE SERRNG"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*11"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SLE SERRNG"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*13"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Act MakeBusy"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*13"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Act MakeBusy"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#13"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deact MakeBusy"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#13"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deact MakeBusy"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**13"	 ,DNMINLEN=4	 ,DNMAXLEN=4	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=4	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Tog MakeBusy"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**13"	 ,DNMINLEN=4	 ,DNMAXLEN=4	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=4	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Tog MakeBusy"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*14"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Act StopHunt"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*14"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Act StopHunt"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#14"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deact StopHunt"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#14"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deact StopHunt"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**14"	 ,DNMINLEN=4	 ,DNMAXLEN=4	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=4	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Tog StopHunt"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**14"	 ,DNMINLEN=4	 ,DNMAXLEN=4	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=4	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Tog StopHunt"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*20"	 ,DNMINLEN=3	 ,DNMAXLEN=5	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Speed Calling"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*20"	 ,DNMINLEN=3	 ,DNMAXLEN=5	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Speed Calling"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*21"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="BGSCL1"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*21"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="BGSCL1"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*22"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="BGSCL2"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*22"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="BGSCL2"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**201"	 ,DNMINLEN=5	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=5	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CCSpeedCalling1"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**201"	 ,DNMINLEN=5	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=5	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CCSpeedCalling1"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**202"	 ,DNMINLEN=5	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=5	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CCSpeedCalling2"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="**202"	 ,DNMINLEN=5	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=5	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CCSpeedCalling2"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*30"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="PIN"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*30"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="PIN"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*31"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="AHD"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*31"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="AHD"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#31"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DHD"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#31"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DHD"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*40"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Activate CFV"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*40"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Activate CFV"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#40"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deactivate CFV"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#40"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deactivate CFV"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*41"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ActivateCFBL"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*41"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ActivateCFBL"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#41"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DeActivateCFBL"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#41"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DeActivateCFBL"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*42"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ActivateCFDA"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*42"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ActivateCFDA"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#42"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DeActivateCFDA"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#42"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DeActivateCFDA"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*43"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ActivateCFVM"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*43"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ActivateCFVM"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#43"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DeActivateCFVM"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#43"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DeActivateCFVM"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*44"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SLE Select CFwd"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*44"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SLE Select CFwd"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*51"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CIDSSuppression"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*51"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CIDSSuppression"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#51"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CIDSDelivery"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#51"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CIDSDelivery"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*54"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Activate SCR"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*54"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Activate SCR"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*55"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Activate ACR"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*55"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Activate ACR"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#55"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deactivate ACR"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#55"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deactivate ACR"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*57"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="MCT"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*57"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="MCT"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*58"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SLE SCA"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*58"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SLE SCA"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*6"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CCS"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*6"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="CCS"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#6"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DCCS"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#6"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DCCS"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*60"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="LINR"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*60"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="LINR"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*61"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="LONR"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*61"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="LONR"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*7"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Call Pick Up A"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*7"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Call Pick Up A"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*70"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Night Bell CPU"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*70"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Night Bell CPU"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*81"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ACCODE"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*81"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ACCODE"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*82"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="PreAuth"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*82"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="PreAuth"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*9"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ACTDND"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*9"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ACTDND"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#9"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DACTDND"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#9"	 ,DNMINLEN=2	 ,DNMAXLEN=2	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=2	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DACTDND"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*90"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ExectiveOvrRide"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*90"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="ExectiveOvrRide"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*71"	 ,DNMINLEN=3	 ,DNMAXLEN=8	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Call_Park_Ser2"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*71"	 ,DNMINLEN=3	 ,DNMAXLEN=8	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Call_Park_Ser2"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#71"	 ,DNMINLEN=3	 ,DNMAXLEN=8	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Call_Retr_Serv"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#71"	 ,DNMINLEN=3	 ,DNMAXLEN=8	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Call_Retr_Serv"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*72"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SILM Monitor"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*72"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SILM Monitor"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*73"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SILM Barge-in"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*73"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="SILM Barge-in"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*32"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Act COSS"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*32"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Act COSS"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#32"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="De-Act COSS"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="#32"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="De-Act COSS"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*74"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Call Pickup Directed"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*74"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Call Pickup Directed"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*45"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deactivate CFV"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*45"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Deactivate CFV"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*33"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DN Announcement"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*33"	 ,DNMINLEN=3	 ,DNMAXLEN=3	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="DN Announcement"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*62"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Intercom 1-Way"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*62"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Intercom 1-Way"	 ,CACLENGTH=0	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*63"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Intercom 2-Way"	 ,CACLENGTH=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*63"	 ,DNMINLEN=3	 ,DNMAXLEN=30	 ,PREFIXTYPE="PAC-VerticalSvcCode"	 ,DIGITPOS=3	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Service"	 ,DESTNAME="Intercom 2-Way"	 ,CACLENGTH=0	;;
+DESTCODECREATE	 ,DESTINATIONCODE="499009"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="TRS_ON"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Intercept"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="499009"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="TRS_ON"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Intercept"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="4910"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="TRS_ON"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Intercept"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="4910"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="TRS_ON"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Intercept"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="*46"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="RACF"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Service"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="*46"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="RACF"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Service"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+EPCREATE	 ,EPNAME="EPP_FB_0014"	 ,EPTYPE="Network_Server"	 ,BGNAME="HerokuCustomer"	 ,CLASSOFSERVICE=""	 ,RATEAREA=""	 ,LATADIGITS=""	 ,PRIVACYSUPPORT="SipFull"	 ,CALLINGLOC=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,TIMEZONE="Europe/Berlin"	 ,BEARER_SPEECH=1	 ,BEARER_3_1K=0	 ,BEARER_56K=0	 ,BEARER_64K=0	 ,ECHOCANCELLATION=1	 ,SILENCESUPPRESSION=0	 ,QOSCLASSMODE=TOS	 ,QOSVALUE=0	 ,QOSPROFILENAME=""	 ,QOSPROFILEBGNAME=""	 ,CODECPRIM=None	 ,PPPRIM=0	 ,TOSPRIM=0	 ,CODECSEC=None	 ,PPSEC=0	 ,TOSSEC=0	 ,CODECTHIRD=None	 ,PPTHIRD=0	 ,TOSTHIRD=0	 ,CODECFOURTH=None	 ,PPFOURTH=0	 ,TOSFOURTH=0	 ,LANGUAGE=System Default	 ,FAXMODE="G711"	 ,FAXSTATISTICS=0	 ,OUTBANDDTMFSIGNALING=0	 ,SUPPRESSOUTBANDDTMFWITHG711=0	 ,FAILEDCALLSINTERCEPTTREATMENT=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+EPCREATE	 ,EPNAME="EPP_FB_0014"	 ,EPTYPE="Network_Server"	 ,BGNAME="HerokuCustomer"	 ,CLASSOFSERVICE=""	 ,RATEAREA=""	 ,LATADIGITS=""	 ,PRIVACYSUPPORT="SipFull"	 ,CALLINGLOC=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,TIMEZONE="Europe/Berlin"	 ,BEARER_SPEECH=1	 ,BEARER_3_1K=0	 ,BEARER_56K=0	 ,BEARER_64K=0	 ,ECHOCANCELLATION=1	 ,SILENCESUPPRESSION=0	 ,QOSCLASSMODE=TOS	 ,QOSVALUE=0	 ,QOSPROFILENAME=""	 ,QOSPROFILEBGNAME=""	 ,CODECPRIM=None	 ,PPPRIM=0	 ,TOSPRIM=0	 ,CODECSEC=None	 ,PPSEC=0	 ,TOSSEC=0	 ,CODECTHIRD=None	 ,PPTHIRD=0	 ,TOSTHIRD=0	 ,CODECFOURTH=None	 ,PPFOURTH=0	 ,TOSFOURTH=0	 ,LANGUAGE=System Default	 ,FAXMODE="G711"	 ,FAXSTATISTICS=0	 ,OUTBANDDTMFSIGNALING=0	 ,SUPPRESSOUTBANDDTMFWITHG711=0	 ,FAILEDCALLSINTERCEPTTREATMENT=0	;;
+EPADDFEAT	 ,EPNAME="EPP_FB_0014"	EPCT	 ,ENABLED=1	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+EPADDFEAT	 ,EPNAME="EPP_FB_0014"	EPCT	 ,ENABLED=1	;;
+EPADDFEAT	 ,EPNAME="EPP_FB_0014"	EPVM	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 95 <Endpoint,EndpointName=FB_0014,EndpointIpAddress=,EndpointRasIpAddress=,EndpointPort=5060,EndpointAltPort=5060,EndpointRasPort=0,EndpointEndpointType=EtSip,EndpointRegistration=1671,EndpointTimeToLive=0,EndpointAccountAuth=AccountAuthBasedOnEp,EndpointProfileName=EPP_FB_0014,EndpointSessions=0,EndpointTransport=TtTcp,EndpointAttributesOne=0,EndpointServerFailover=EpFailoverOff,EndpointConnectionId=-1,EndpointKeysetUse=KeysetNone,EndpointAssociatedEndpointName=,EndpointAttributesTwo=0,EndpointAttributesThree=16,EndpointSrtpSupport=SrtpAutomatic,EndpointDnsSrv=DnsSrvDisabled,EndpointDefaultHomeDn=,EndpointEndpointNNIType=NNITypeOther,EndpointSdesSrtpSupport=SrtpAutomatic>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createEndpoint>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 96 <Alias,NodeName=FB_0014,AliasesAliasName=FB_0014_alias,AliasesAliasType=AtSipUrl,AliasesRegistration=0>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createAlias>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 98 <Destination,DestinationName=D_FB_0014,DestinationSignaling=SigUnassigned,DestinationBearer=CapUnused,DestinationDestinationAttributes=DaNotMSDestRerouted,DestinationAttributes=AtrYes,DestinationNumberPlanName=CNP_HerokuCustomer_0014,DestinationPrefixAreaCode=AtrNo,DestinationPrefixCountryCode=AtrNo,DestinationReRoute=AtrYes>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createDestination>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 99 <Route,NumberRoutes=1,GenericRouteDestinationName=D_FB_0014,GenericRouteDestinationSignaling=SigUnassigned,GenericRouteDestinationBearer=CapUnassigned,GenericRouteDestinationDestinationAttributes=DaNotMSDest,GenericRouteDestinationAttributes=AtrYes,GenericRouteDestinationPrefixAreaCode=AtrNo,GenericRouteDestinationPrefixCountryCode=AtrNo,GenericRouteDestinationReRoute=AtrYes,RouteListId=10,RouteListReferenceName=FB_0014,RouteListReferenceType=RtSipEndpoint,RouteListDigitsToDelete=0,RouteListDigitsToInsert=,RouteListNatureOfAddress=NoaUndefined,RouteListCacSignaling=CacUndefined,RouteListLocalTollName=,RouteListDigitsSubscriber=,RouteListDigitsNational=,RouteListDigitsInternational=,RouteListLocalNumbersOnly=0,RouteListisPrefixed=0>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createRoute>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ROUTE	 ,NUMBERROUTES=1	 ,GENERICROUTEDESTINATIONNAME=D_FB_0014	 ,GENERICROUTEDESTINATIONSIGNALING=SigUnassigned	 ,GENERICROUTEDESTINATIONBEARER=CapUnassigned	 ,GENERICROUTEDESTINATIONDESTINATIONATTRIBUTES=DaNotMSDest	 ,GENERICROUTEDESTINATIONATTRIBUTES=AtrYes	 ,GENERICROUTEDESTINATIONPREFIXAREACODE=AtrNo	 ,GENERICROUTEDESTINATIONPREFIXCOUNTRYCODE=AtrNo	 ,GENERICROUTEDESTINATIONREROUTE=AtrYes	 ,ROUTELISTID=10	 ,ROUTELISTREFERENCENAME="FB_0014"	 ,ROUTELISTREFERENCETYPE=RtSipEndpoint	 ,ROUTELISTDIGITSTODELETE=0	 ,ROUTELISTDIGITSTOINSERT=""	 ,ROUTELISTNATUREOFADDRESS=NoaUndefined	 ,ROUTELISTCACSIGNALING=CacUndefined	 ,ROUTELISTLOCALTOLLNAME=""	 ,ROUTELISTDIGITSSUBSCRIBER=""	 ,ROUTELISTDIGITSNATIONAL=""	 ,ROUTELISTDIGITSINTERNATIONAL=""	 ,ROUTELISTLOCALNUMBERSONLY=0	 ,ROUTELISTISPREFIXED=0	;;
+DESTCODECREATE	 ,DESTINATIONCODE="1"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="1"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="2"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="2"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="3"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="3"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="4"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="4"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="5"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="5"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="6"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="6"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="7"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="7"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="8"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="8"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+DESTCODECREATE	 ,DESTINATIONCODE="9"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_FB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 109 <Destination,DestinationName=D_UC_C_0014,DestinationSignaling=SigUnassigned,DestinationBearer=CapUnused,DestinationDestinationAttributes=DaNotMSDestRerouted,DestinationAttributes=AtrYes,DestinationNumberPlanName=CNP_HerokuCustomer_0014,DestinationPrefixAreaCode=AtrNo,DestinationPrefixCountryCode=AtrNo,DestinationReRoute=AtrYes>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createDestination>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 110 <Route,NumberRoutes=1,GenericRouteDestinationName=D_UC_C_0014,GenericRouteDestinationSignaling=SigUnassigned,GenericRouteDestinationBearer=CapUnassigned,GenericRouteDestinationDestinationAttributes=DaNotMSDest,GenericRouteDestinationAttributes=AtrYes,GenericRouteDestinationPrefixAreaCode=AtrNo,GenericRouteDestinationPrefixCountryCode=AtrNo,GenericRouteDestinationReRoute=AtrNo,RouteListId=10,RouteListReferenceName=EP_MediaSrv1,RouteListReferenceType=RtSipEndpoint,RouteListDigitsToDelete=15,RouteListDigitsToInsert=424503,RouteListNatureOfAddress=NoaUndefined,RouteListCacSignaling=CacUndefined,RouteListLocalTollName=,RouteListDigitsSubscriber=,RouteListDigitsNational=,RouteListDigitsInternational=,RouteListLocalNumbersOnly=0,RouteListisPrefixed=0>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createRoute>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 111 <Destination,DestinationName=D_XPR_0014,DestinationSignaling=SigUnassigned,DestinationBearer=CapUnused,DestinationDestinationAttributes=DaNotMSDestRerouted,DestinationAttributes=AtrNo,DestinationNumberPlanName=CNP_HerokuCustomer_0014,DestinationPrefixAreaCode=AtrNo,DestinationPrefixCountryCode=AtrNo,DestinationReRoute=AtrYes>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createDestination>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 112 <Route,NumberRoutes=1,GenericRouteDestinationName=D_XPR_0014,GenericRouteDestinationSignaling=SigUnassigned,GenericRouteDestinationBearer=CapUnassigned,GenericRouteDestinationDestinationAttributes=DaNotMSDest,GenericRouteDestinationAttributes=AtrNo,GenericRouteDestinationPrefixAreaCode=AtrNo,GenericRouteDestinationPrefixCountryCode=AtrNo,GenericRouteDestinationReRoute=AtrNo,RouteListId=10,RouteListReferenceName=EP_xpr1,RouteListReferenceType=RtSipEndpoint,RouteListDigitsToDelete=0,RouteListDigitsToInsert=,RouteListNatureOfAddress=NoaUndefined,RouteListCacSignaling=CacUndefined,RouteListLocalTollName=,RouteListDigitsSubscriber=,RouteListDigitsNational=,RouteListDigitsInternational=,RouteListLocalNumbersOnly=0,RouteListisPrefixed=0>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createRoute>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ROUTE	 ,NUMBERROUTES=1	 ,GENERICROUTEDESTINATIONNAME=D_XPR_0014	 ,GENERICROUTEDESTINATIONSIGNALING=SigUnassigned	 ,GENERICROUTEDESTINATIONBEARER=CapUnassigned	 ,GENERICROUTEDESTINATIONDESTINATIONATTRIBUTES=DaNotMSDest	 ,GENERICROUTEDESTINATIONATTRIBUTES=AtrNo	 ,GENERICROUTEDESTINATIONPREFIXAREACODE=AtrNo	 ,GENERICROUTEDESTINATIONPREFIXCOUNTRYCODE=AtrNo	 ,GENERICROUTEDESTINATIONREROUTE=AtrNo	 ,ROUTELISTID=10	 ,ROUTELISTREFERENCENAME="EP_xpr1"	 ,ROUTELISTREFERENCETYPE=RtSipEndpoint	 ,ROUTELISTDIGITSTODELETE=0	 ,ROUTELISTDIGITSTOINSERT=""	 ,ROUTELISTNATUREOFADDRESS=NoaUndefined	 ,ROUTELISTCACSIGNALING=CacUndefined	 ,ROUTELISTLOCALTOLLNAME=""	 ,ROUTELISTDIGITSSUBSCRIBER=""	 ,ROUTELISTDIGITSNATIONAL=""	 ,ROUTELISTDIGITSINTERNATIONAL=""	 ,ROUTELISTLOCALNUMBERSONLY=0	 ,ROUTELISTISPREFIXED=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+PARKLOTCREATE	   ,BGNAME="HerokuCustomer"	   ,PARKINGLOTNAME="ParkingLot1"	   ,RECALLTIMER=180	   ,PARKINGSTART=0	   ,PARKINGEND=9	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<Parking Lot Created Successfully>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+PARKLOTCREATE	   ,BGNAME="HerokuCustomer"	   ,PARKINGLOTNAME="ParkingLot1"	   ,RECALLTIMER=180	   ,PARKINGSTART=0	   ,PARKINGEND=9	;;
+FPCREATE	 ,FPNAME="FP_Standard_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Sec_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_UC_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_UC_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_UC_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_UC_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_UC_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_UC_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_UC_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_UC_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_UC_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_UC_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_UC_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_UC_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Analogue_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Analogue_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Analogue_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Analogue_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Analogue_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Analogue_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Analogue_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Analogue_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Analogue_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Analogue_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Analogue_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Analogue_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_MLHG"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_MLHG"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Standard_Pilot_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Supervisor_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Agent_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Agent_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Agent_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Agent_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Agent_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Agent_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Agent_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Agent_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Agent_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Agent_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_CC_Agent_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_CC_Agent_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_MoH_MLHG_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_OSCC_Initial_MLHG_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_MLHG_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Pre"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Int"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Mob"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Nat"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Loc"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+FPCREATE	 ,FPNAME="FP_Concierge_Extension_Off"	 ,BGNAME="HerokuCustomer"	 ,FEATUREPROFILETYPE="FeatureProfileCentrex"	 ,FEATUREPROFILECONNECTIONTYPE="ConnectionTypeSIP"	;;
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ABF	 ,BGNAME="HerokuCustomer"	BgLC	 ,MINNUMBERPORTS=0	 ,MAXNUMBERPORTS=30	 ,MAXCONFERENCES=10	 ,MAXCONFERENCEMEMBERS=8	 ,CONFERENCERECALLDISCTIMER=10	 ,PLAYENTRYEXITTONE=0	;;
+CDNMPREFIX	 ,BGNAME="HerokuCustomer"	 ,NPNAME=""	 ,TYPEOFNUMBER="DNM_TON_International"	 ,NETWORKACCESSCODE="0"	 ,PREFIXCODE="00"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+CDNMPREFIX	 ,BGNAME="HerokuCustomer"	 ,NPNAME=""	 ,TYPEOFNUMBER="DNM_TON_International"	 ,NETWORKACCESSCODE="0"	 ,PREFIXCODE="00"	;;
+CDNMPREFIX	 ,BGNAME="HerokuCustomer"	 ,NPNAME=""	 ,TYPEOFNUMBER="DNM_TON_National"	 ,NETWORKACCESSCODE="0"	 ,PREFIXCODE="0"	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+CDNMPREFIX	 ,BGNAME="HerokuCustomer"	 ,NPNAME=""	 ,TYPEOFNUMBER="DNM_TON_National"	 ,NETWORKACCESSCODE="0"	 ,PREFIXCODE="0"	;;
+CDNMPREFIX	 ,BGNAME="HerokuCustomer"	 ,NPNAME=""	 ,TYPEOFNUMBER="DNM_TON_Subscriber"	 ,NETWORKACCESSCODE="0"	 ,PREFIXCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+CDNMPREFIX	 ,BGNAME="HerokuCustomer"	 ,NPNAME=""	 ,TYPEOFNUMBER="DNM_TON_Subscriber"	 ,NETWORKACCESSCODE="0"	 ,PREFIXCODE=""	;;
+CDNMMODIFICATION	 ,FROMBGNAME="HerokuCustomer"	 ,TOBGNAME="HerokuCustomer"	 ,FROMNPNAME=""	 ,TONPNAME=""	 ,ENDPOINT_TYPE="DNM_EpType_ALL"	 ,EPNAME=""	 ,INPUTTON="DNM_TON_ANY"	 ,PRIORITY=1	 ,OUTPUTTON="DNM_TON_International"	 ,NUMBERSOURCE="DNM_NS_DefaultHomeDN"	 ,OPTIMIZETON="DNM_TON_National"	 ,RESTRICTPRESENTATION=FALSE	 ,PREFIXREQUIRED=TRUE	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<CreateDnmModification>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+CDNMMODIFICATION	 ,FROMBGNAME="HerokuCustomer"	 ,TOBGNAME="HerokuCustomer"	 ,FROMNPNAME=""	 ,TONPNAME=""	 ,ENDPOINT_TYPE="DNM_EpType_ALL"	 ,EPNAME=""	 ,INPUTTON="DNM_TON_ANY"	 ,PRIORITY=1	 ,OUTPUTTON="DNM_TON_International"	 ,NUMBERSOURCE="DNM_NS_DefaultHomeDN"	 ,OPTIMIZETON="DNM_TON_National"	 ,RESTRICTPRESENTATION=FALSE	 ,PREFIXREQUIRED=TRUE	;;
+CDNMMODIFICATION	 ,FROMBGNAME="HerokuCustomer"	 ,TOBGNAME="HerokuCustomer"	 ,FROMNPNAME=""	 ,TONPNAME=""	 ,ENDPOINT_TYPE="DNM_EpType_None"	 ,EPNAME=""	 ,INPUTTON="DNM_TON_ANY"	 ,PRIORITY=1	 ,OUTPUTTON="DNM_TON_L0"	 ,NUMBERSOURCE="DNM_NS_InputNumber"	 ,OPTIMIZETON="DNM_TON_Extension"	 ,RESTRICTPRESENTATION=FALSE	 ,PREFIXREQUIRED=FALSE	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<CreateDnmModification>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+CDNMMODIFICATION	 ,FROMBGNAME="HerokuCustomer"	 ,TOBGNAME="HerokuCustomer"	 ,FROMNPNAME=""	 ,TONPNAME=""	 ,ENDPOINT_TYPE="DNM_EpType_None"	 ,EPNAME=""	 ,INPUTTON="DNM_TON_ANY"	 ,PRIORITY=1	 ,OUTPUTTON="DNM_TON_L0"	 ,NUMBERSOURCE="DNM_NS_InputNumber"	 ,OPTIMIZETON="DNM_TON_Extension"	 ,RESTRICTPRESENTATION=FALSE	 ,PREFIXREQUIRED=FALSE	;;
+CDNMMODIFICATION	 ,FROMBGNAME="HerokuCustomer"	 ,TOBGNAME="HerokuCustomer"	 ,FROMNPNAME=""	 ,TONPNAME=""	 ,ENDPOINT_TYPE="DNM_EpType_ALL_PN"	 ,EPNAME=""	 ,INPUTTON="DNM_TON_ANY"	 ,PRIORITY=1	 ,OUTPUTTON="DNM_TON_Normalized"	 ,NUMBERSOURCE="DNM_NS_InputNumber"	 ,OPTIMIZETON="DNM_TON_None"	 ,RESTRICTPRESENTATION=FALSE	 ,PREFIXREQUIRED=FALSE	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<CreateDnmModification>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 1300 <Destination,DestinationName=D_UC_0014,DestinationSignaling=SigUnassigned,DestinationBearer=CapUnused,DestinationDestinationAttributes=DaNotMSDestRerouted,DestinationAttributes=AtrYes,DestinationNumberPlanName=CNP_HerokuCustomer_0014,DestinationPrefixAreaCode=AtrNo,DestinationPrefixCountryCode=AtrNo,DestinationReRoute=AtrYes>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createDestination>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 1301 <Route,NumberRoutes=1,GenericRouteDestinationName=D_UC_0014,GenericRouteDestinationSignaling=SigUnassigned,GenericRouteDestinationBearer=CapUnassigned,GenericRouteDestinationDestinationAttributes=DaNotMSDest,GenericRouteDestinationAttributes=AtrYes,GenericRouteDestinationPrefixAreaCode=AtrNo,GenericRouteDestinationPrefixCountryCode=AtrNo,GenericRouteDestinationReRoute=AtrNo,RouteListId=10,RouteListReferenceName=EP_MediaSrv1,RouteListReferenceType=RtSipEndpoint,RouteListDigitsToDelete=0,RouteListDigitsToInsert=,RouteListNatureOfAddress=NoaUndefined,RouteListCacSignaling=CacUndefined,RouteListLocalTollName=,RouteListDigitsSubscriber=,RouteListDigitsNational=,RouteListDigitsInternational=,RouteListLocalNumbersOnly=0,RouteListisPrefixed=0>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createRoute>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ROUTE	 ,NUMBERROUTES=1	 ,GENERICROUTEDESTINATIONNAME=D_UC_0014	 ,GENERICROUTEDESTINATIONSIGNALING=SigUnassigned	 ,GENERICROUTEDESTINATIONBEARER=CapUnassigned	 ,GENERICROUTEDESTINATIONDESTINATIONATTRIBUTES=DaNotMSDest	 ,GENERICROUTEDESTINATIONATTRIBUTES=AtrYes	 ,GENERICROUTEDESTINATIONPREFIXAREACODE=AtrNo	 ,GENERICROUTEDESTINATIONPREFIXCOUNTRYCODE=AtrNo	 ,GENERICROUTEDESTINATIONREROUTE=AtrNo	 ,ROUTELISTID=10	 ,ROUTELISTREFERENCENAME="EP_MediaSrv1"	 ,ROUTELISTREFERENCETYPE=RtSipEndpoint	 ,ROUTELISTDIGITSTODELETE=0	 ,ROUTELISTDIGITSTOINSERT=""	 ,ROUTELISTNATUREOFADDRESS=NoaUndefined	 ,ROUTELISTCACSIGNALING=CacUndefined	 ,ROUTELISTLOCALTOLLNAME=""	 ,ROUTELISTDIGITSSUBSCRIBER=""	 ,ROUTELISTDIGITSNATIONAL=""	 ,ROUTELISTDIGITSINTERNATIONAL=""	 ,ROUTELISTLOCALNUMBERSONLY=0	 ,ROUTELISTISPREFIXED=0	;;
+DESTCODECREATE	 ,DESTINATIONCODE="4245"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_UC_C_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 1303 <Destination,DestinationName=D_XPR_D_0014,DestinationSignaling=SigUnassigned,DestinationBearer=CapUnused,DestinationDestinationAttributes=DaNotMSDestRerouted,DestinationAttributes=AtrNo,DestinationNumberPlanName=CNP_HerokuCustomer_0014,DestinationPrefixAreaCode=AtrNo,DestinationPrefixCountryCode=AtrNo,DestinationReRoute=AtrYes>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createDestination>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 1304 <Destination,DestinationName=D_XPR_F_0014,DestinationSignaling=SigUnassigned,DestinationBearer=CapUnused,DestinationDestinationAttributes=DaNotMSDestRerouted,DestinationAttributes=AtrNo,DestinationNumberPlanName=CNP_HerokuCustomer_0014,DestinationPrefixAreaCode=AtrNo,DestinationPrefixCountryCode=AtrNo,DestinationReRoute=AtrYes>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createDestination>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 1305 <Destination,DestinationName=D_XPR_CB_0014,DestinationSignaling=SigUnassigned,DestinationBearer=CapUnused,DestinationDestinationAttributes=DaNotMSDestRerouted,DestinationAttributes=AtrNo,DestinationNumberPlanName=CNP_HerokuCustomer_0014,DestinationPrefixAreaCode=AtrNo,DestinationPrefixCountryCode=AtrNo,DestinationReRoute=AtrYes>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createDestination>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 1306 <Route,NumberRoutes=1,GenericRouteDestinationName=D_XPR_D_0014,GenericRouteDestinationSignaling=SigUnassigned,GenericRouteDestinationBearer=CapUnassigned,GenericRouteDestinationDestinationAttributes=DaNotMSDest,GenericRouteDestinationAttributes=AtrNo,GenericRouteDestinationPrefixAreaCode=AtrNo,GenericRouteDestinationPrefixCountryCode=AtrNo,GenericRouteDestinationReRoute=AtrNo,RouteListId=10,RouteListReferenceName=EP_xpr1,RouteListReferenceType=RtSipEndpoint,RouteListDigitsToDelete=15,RouteListDigitsToInsert=424049000,RouteListNatureOfAddress=NoaUndefined,RouteListCacSignaling=CacUndefined,RouteListLocalTollName=,RouteListDigitsSubscriber=,RouteListDigitsNational=,RouteListDigitsInternational=,RouteListLocalNumbersOnly=0,RouteListisPrefixed=0>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createRoute>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 1307 <Route,NumberRoutes=1,GenericRouteDestinationName=D_XPR_F_0014,GenericRouteDestinationSignaling=SigUnassigned,GenericRouteDestinationBearer=CapUnassigned,GenericRouteDestinationDestinationAttributes=DaNotMSDest,GenericRouteDestinationAttributes=AtrNo,GenericRouteDestinationPrefixAreaCode=AtrNo,GenericRouteDestinationPrefixCountryCode=AtrNo,GenericRouteDestinationReRoute=AtrNo,RouteListId=10,RouteListReferenceName=EP_xpr1,RouteListReferenceType=RtSipEndpoint,RouteListDigitsToDelete=15,RouteListDigitsToInsert=424049001,RouteListNatureOfAddress=NoaUndefined,RouteListCacSignaling=CacUndefined,RouteListLocalTollName=,RouteListDigitsSubscriber=,RouteListDigitsNational=,RouteListDigitsInternational=,RouteListLocalNumbersOnly=0,RouteListisPrefixed=0>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createRoute>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Processing line 1308 <Route,NumberRoutes=1,GenericRouteDestinationName=D_XPR_CB_0014,GenericRouteDestinationSignaling=SigUnassigned,GenericRouteDestinationBearer=CapUnassigned,GenericRouteDestinationDestinationAttributes=DaNotMSDest,GenericRouteDestinationAttributes=AtrNo,GenericRouteDestinationPrefixAreaCode=AtrNo,GenericRouteDestinationPrefixCountryCode=AtrNo,GenericRouteDestinationReRoute=AtrNo,RouteListId=10,RouteListReferenceName=EP_xpr1,RouteListReferenceType=RtSipEndpoint,RouteListDigitsToDelete=15,RouteListDigitsToInsert=424049002,RouteListNatureOfAddress=NoaUndefined,RouteListCacSignaling=CacUndefined,RouteListLocalTollName=,RouteListDigitsSubscriber=,RouteListDigitsNational=,RouteListDigitsInternational=,RouteListLocalNumbersOnly=0,RouteListisPrefixed=0>
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<createRoute>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+ROUTE	 ,NUMBERROUTES=1	 ,GENERICROUTEDESTINATIONNAME=D_XPR_CB_0014	 ,GENERICROUTEDESTINATIONSIGNALING=SigUnassigned	 ,GENERICROUTEDESTINATIONBEARER=CapUnassigned	 ,GENERICROUTEDESTINATIONDESTINATIONATTRIBUTES=DaNotMSDest	 ,GENERICROUTEDESTINATIONATTRIBUTES=AtrNo	 ,GENERICROUTEDESTINATIONPREFIXAREACODE=AtrNo	 ,GENERICROUTEDESTINATIONPREFIXCOUNTRYCODE=AtrNo	 ,GENERICROUTEDESTINATIONREROUTE=AtrNo	 ,ROUTELISTID=10	 ,ROUTELISTREFERENCENAME="EP_xpr1"	 ,ROUTELISTREFERENCETYPE=RtSipEndpoint	 ,ROUTELISTDIGITSTODELETE=15	 ,ROUTELISTDIGITSTOINSERT="424049002"	 ,ROUTELISTNATUREOFADDRESS=NoaUndefined	 ,ROUTELISTCACSIGNALING=CacUndefined	 ,ROUTELISTLOCALTOLLNAME=""	 ,ROUTELISTDIGITSSUBSCRIBER=""	 ,ROUTELISTDIGITSNATIONAL=""	 ,ROUTELISTDIGITSINTERNATIONAL=""	 ,ROUTELISTLOCALNUMBERSONLY=0	 ,ROUTELISTISPREFIXED=0	;;
+DESTCODECREATE	 ,DESTINATIONCODE="4240"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="4240"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_International"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	;;
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*0"	 ,DNMINLEN=3	 ,DNMAXLEN=4	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	 ;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+APAC	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DIGITS="*0"	 ,DNMINLEN=3	 ,DNMAXLEN=4	 ,PREFIXTYPE="PAC-OnNetAc"	 ,DIGITPOS=0	 ,DIGITSINSERT=""	 ,TRAILINGDIGITPOS=30	 ,NOA="PAC-Unknown"	 ,DESTTYPE="PAC-Undefined"	 ,DESTNAME=""	 ,CACLENGTH=0	 ;;
+DESTCODECREATE	 ,DESTINATIONCODE="*010"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_D_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_Unknown"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	 ;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="*010"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_D_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_Unknown"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	 ;;
+DESTCODECREATE	 ,DESTINATIONCODE="*011"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_F_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_Unknown"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	 ;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="*011"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_F_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_Unknown"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	 ;;
+DESTCODECREATE	 ,DESTINATIONCODE="*012"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_CB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_Unknown"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	 ;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="*012"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_CB_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_Unknown"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	 ;;
+DESTCODECREATE	 ,DESTINATIONCODE="*013"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_Unknown"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	 ;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+Executing MP2 COMMAND:
+DESTCODECREATE	 ,DESTINATIONCODE="*013"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_XPR_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_Unknown"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	 ;;
+DESTCODECREATE	 ,DESTINATIONCODE="*02"	 ,CODEINDEXNAME=""	 ,NUMPA=""	 ,HOMEDNOFFICECODE=""	 ,NUMBERPLANNAME="CNP_HerokuCustomer_0014"	 ,DESTINATIONNAME="D_UC_C_0014"	 ,RATEAREA=""	 ,CLASSOFSERVICE=""	 ,DESTINATIONTYPE="DT_Destination"	 ,TRAFFICTYPENAME=""	 ,NATUREOFADDRESS="NOA_Unknown"	 ,OPERPREFIXNOTALLOWED=0	 ,NATIONALPREFIXNOTALLOWED=0	 ,NATIONPREFIXREQUIRED=0	 ,CACNOTALLOWED=0	 ,INTRIGPROCREQUIRED=0	 ,DESTNEWCODE=""	 ,DESTCOUNTRYCODE=""	 ;;
+
+ResultCode<0>
+JobId<>
+ResultText1<Success>
+ResultText2<>
+ResultText3<>
+ResultText4<>
+ResultText5<>
+
+[ ----------------------- ]
+
+*********  Success:235   Warnings:0    Errors:0     Syntax Errors:0      *********
+
+Call SOAP command - END
+
+CLI>

@@ -1,10 +1,12 @@
 ## just trying something:
 ## initialize for testing:
-#set ( ${headers.systemType} = "mySystemType" )
-#set ( $templateName = "template" )
+##set ( ${headers.systemType} = "mySystemType" )
+##
+##
+#set ( $___templateName = "template" )
 #if ( ${headers.systemType} && ${headers.systemType} != "" )
-  # set ( $templateName = $templateName + "_systemType=" + ${headers.systemType} )
+  #set ( $___templateName = $___templateName + "_systemType=" + ${headers.systemType} )
 #else
   ${headers.systemType} is mandatory!
 #end
-$templateName
+$___templateName
